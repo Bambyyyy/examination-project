@@ -178,7 +178,9 @@ export default function Page() {
                   >
                     {productColors?.map((product, index) => (
                       <SwiperSlide key={index}>
-                        <a href={`http://localhost:3000/p/${product?.itemUrl}`}>
+                        <a
+                          href={`https://examination-project-delta.vercel.app/p/${product?.itemUrl}`}
+                        >
                           <div
                             style={{ backgroundColor: product?.itemColorHex }}
                             className={`size-11 rounded-full`}

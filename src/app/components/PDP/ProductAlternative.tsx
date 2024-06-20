@@ -50,7 +50,9 @@ export default function ProductAlternative() {
             <SwiperSlide key={index}>
               <div className="space-y-2.5">
                 <div className="relative rounded-3xl overflow-hidden">
-                  <a href={`http://localhost:3000/p/${product.itemUrl}`}>
+                  <a
+                    href={`https://examination-project-delta.vercel.app/p/${product.itemUrl}`}
+                  >
                     <Image
                       src={product.itemImage}
                       alt="Image"
@@ -74,7 +76,7 @@ export default function ProductAlternative() {
                 </div>
                 <div className="lato space-y-2.5">
                   <a
-                    href={`http://localhost:3000/p/${product.itemUrl}`}
+                    href={`https://examination-project-delta.vercel.app/p/${product.itemUrl}`}
                     className="font-bold text-sm"
                   >
                     {product.itemName}

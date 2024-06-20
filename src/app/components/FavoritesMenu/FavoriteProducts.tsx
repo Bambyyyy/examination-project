@@ -15,7 +15,9 @@ export default function FavoriteProducts() {
       {favoriteItems.map((item, index) => (
         <div key={index} className="space-y-2.5">
           <div className="relative aspect-[185/231]">
-            <a href={`http://localhost:3000/p/${item.itemUrl}`}>
+            <a
+              href={`https://examination-project-delta.vercel.app/p/${item.itemUrl}`}
+            >
               <Image
                 src={item.itemImage}
                 alt="Image"

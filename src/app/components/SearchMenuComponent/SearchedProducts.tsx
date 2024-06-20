@@ -22,7 +22,9 @@ export default function SearchedProducts({ filter, filteredProducts }: Props) {
       {filteredProducts.map((item, index) => (
         <div className="space-y-2.5" key={index}>
           <div className="relative aspect-[18/22] rounded-3xl overflow-hidden">
-            <a href={`http://localhost:3000/p/${item.itemUrl}`}>
+            <a
+              href={`https://examination-project-delta.vercel.app/p/${item.itemUrl}`}
+            >
               <Image
                 src={item.itemImage}
                 alt="Image"
@@ -42,7 +44,9 @@ export default function SearchedProducts({ filter, filteredProducts }: Props) {
             </div>
           </div>
           <div className="space-y-2.5">
-            <Link href={`http://localhost:3000/p/${item.itemUrl}`}>
+            <Link
+              href={`https://examination-project-delta.vercel.app/p/${item.itemUrl}`}
+            >
               <h3 className="font-bold">{item.itemName.replace(/-/g, " ")}</h3>
             </Link>
             <div className="text-xs opacity-50">
