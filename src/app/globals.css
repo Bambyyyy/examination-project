@@ -1,0 +1,323 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.swiper-pagination {
+  display: flex;
+  justify-items: end;
+  padding: 16px;
+}
+
+.swipe-left-btn {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+}
+
+.swipe-right-btn {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+}
+
+.nav-btn::after,
+.nav-btn::before {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  font-size: 15px !important;
+  color: #1c1c1c;
+  font-weight: 900;
+  padding: 10px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  top: unset !important;
+  bottom: unset !important;
+  left: unset !important;
+  right: unset !important;
+  width: auto !important;
+  position: unset !important;
+  z-index: 10;
+}
+
+.custom-swiper .nav-btn-right::after,
+.nav-btn-right::before {
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    transparent 1%,
+    #f5f5f5 50%
+  );
+}
+
+.custom-swiper .nav-btn-left::after,
+.nav-btn-left::before {
+  background: linear-gradient(
+    to left,
+    transparent 0%,
+    transparent 1%,
+    #f5f5f5 50%
+  );
+}
+
+.custom-swiper .nav-btn-left::after,
+.nav-btn-left::before,
+.nav-btn-right::after,
+.nav-btn-right::before {
+  display: flex !important;
+  height: 100%;
+  justify-content: center !important;
+  align-items: center !important;
+  position: absolute;
+  font-size: 15px !important;
+  color: #1c1c1c;
+  font-weight: 900;
+  padding: 10px;
+}
+
+.nav-btn-left,
+.nav-btn-right {
+  transition: opacity 300ms ease-in-out;
+}
+
+.custom-swiper .swiper-button-disabled {
+  opacity: 0 !important;
+}
+
+.custom-swiper .swipe-left-btn {
+  height: 100%;
+  display: flex !important;
+  align-items: center !important;
+  z-index: 5;
+}
+.custom-swiper .swipe-right-btn {
+  height: 100%;
+  display: flex !important;
+  align-items: center !important;
+  z-index: 5;
+}
+
+.custom-swiper .swipe-right-btn {
+  top: 11px;
+  right: 5px;
+}
+.custom-swiper .swipe-left-btn {
+  top: 11px;
+  left: 5px;
+}
+
+.custom-swiper .swiper-button-prev {
+  display: flex !important;
+  justify-content: center !important;
+  top: 0 !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  width: auto !important;
+  z-index: 10;
+}
+.custom-swiper .swiper-button-next {
+  display: flex !important;
+  justify-content: center !important;
+  top: 0 !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  width: auto !important;
+  z-index: 10;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: black !important;
+}
+
+.swiper-pagination-bullet:not(.swiper-pagination-bullet-active) {
+  border-width: 1px !important;
+  border-color: black !important;
+  background-color: transparent !important;
+  opacity: 1 !important;
+}
+
+.averiaSerifLibre {
+  font-family: var(--font-averiaSerifLibre);
+}
+
+.lato {
+  font-family: var(--font-lato);
+}
+
+body.no-scroll {
+  overflow-y: hidden;
+  margin: 0;
+  height: 100%;
+}
+
+@layer utilities {
+  /* width */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  /* Track */
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #000;
+    border-radius: 10px;
+  }
+
+  /* Handle on hover */
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+}
+
+/* ======== LOGIN SWIPER CSS ======== */
+
+.login-swiper .swiper-pagination {
+  position: absolute;
+  bottom: 0 !important;
+  padding: 16px;
+}
+
+.login-swiper .swiper-pagination-bullet-active {
+  background-color: white !important;
+  border-color: white;
+  border-width: 1px;
+}
+
+.login-swiper .swiper-pagination-bullet:not(.swiper-pagination-bullet-active) {
+  border-width: 1px !important;
+  border-color: white !important;
+  background-color: transparent !important;
+  opacity: 1 !important;
+}
+
+.login-swiper .swipe-left-btn {
+  left: 20px;
+}
+
+.login-swiper .swipe-right-btn {
+  right: 20px;
+}
+
+.login-swiper .swiper-button-next:after {
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 25px;
+  padding: 0px;
+}
+
+.login-swiper .swiper-button-prev:after {
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 25px;
+  padding: 0px;
+}
+
+.login-swiper .swiper-button-next:after {
+  padding-left: 3px;
+  padding-top: 2px;
+}
+
+.login-swiper .swiper-button-prev:after {
+  padding-right: 3px;
+  padding-top: 2px;
+}
+
+/* ======== LOGIN SWIPER CSS ======== */
+
+.choose-your-vibe-swiper .swipe-left-btn {
+  left: 5px;
+  top: 15px;
+}
+
+.choose-your-vibe-swiper .swipe-right-btn {
+  right: 5px;
+  top: 15px;
+}
+
+.choose-your-vibe-swiper .swiper-button-next:after {
+  background-color: #333333;
+  color: #c7c7c7;
+  width: 30px;
+  height: 30px;
+  border-radius: 25px;
+  padding: 0px;
+}
+
+.choose-your-vibe-swiper .swiper-button-prev:after {
+  background-color: #333333;
+  color: #c7c7c7;
+  width: 30px;
+  height: 30px;
+  border-radius: 25px;
+  padding: 0px;
+}
+
+.choose-your-vibe-swiper .swiper-button-next:after {
+  padding-left: 3px;
+  padding-top: 2px;
+}
+
+.choose-your-vibe-swiper .swiper-button-prev:after {
+  padding-right: 3px;
+  padding-top: 2px;
+}
+
+.skeleton {
+  animation: skeleton-loading 1s linear infinite alternate;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-color: hsl(200, 20%, 70%);
+  }
+
+  100% {
+    background-color: hsl(200, 20%, 95%);
+  }
+}
+
+/* :root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+} */
