@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# General Info
 
-## Getting Started
+This is my graduation project that I made in order to graduate from my two year Frontend developer education.
 
-First, run the development server:
+# How download and install the project
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+In order to run this project your firstly need to download it via your command prompt (CMD)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Type the following once the CMD is open: "git clone https://github.com/Bambyyyy/examination-project.git"
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Once the project has been downloaded, simply run "npm i" in the CMD
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+# How to run the project
 
-## Learn More
+### There are two ways that you now could start it up, first one is:
 
-To learn more about Next.js, take a look at the following resources:
+**1.** Run "npm run dev" in the CMD for development server and then click on the "localhost:3000" link in your coding environment.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**2.** You can also run the "npm run build" command and once it's done run the "npm start" command and then click on the "localhost:3000" link in your coding environment.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+# Functionality
 
-## Deploy on Vercel
+There are some functionalities in the project such as:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Adding products to your "liked" products menu.
+- Adding products from the "liked" products menu to the cart.
+- Adding products straight away to the cart.
+- You can also search for products in the search menu.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+But there are some more that you can find out by playing around in the project.
+
+# Technologies
+
+- NextJS
+- React
+- TypeScript
+- Tailwind CSS
+- CSS
